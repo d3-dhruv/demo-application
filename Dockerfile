@@ -4,7 +4,13 @@ EXPOSE 80
 ENTRYPOINT ["java", "-jar", "demo-application.jar"]
 
 
-
+# stage('Versioning') {
+#     steps {
+#         script {
+#             sh 'mvn versions:set -DnewVersion=1.0.${BUILD_NUMBER}'
+#         }
+#     }
+# }
 
 # FROM adoptopenjdk/openjdk11
     
